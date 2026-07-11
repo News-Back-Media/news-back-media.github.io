@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
     <loc>https://news-back-media.github.io/</loc>
   </url>
+
+  <url>
+    <loc>https://news-back-media.github.io/about-nbm.html</loc>
+  </url>
+
 </urlset>
