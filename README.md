@@ -17,8 +17,8 @@ NewsBackMedia merupakan proyek media digital yang berfokus pada penyampaian beri
 - Ekonomi
 - Teknologi
 - Keamanan Siber
-- Pendidikan
-- Sosial
+- Olahraga
+- Informasi Umum
 
 ---
 
