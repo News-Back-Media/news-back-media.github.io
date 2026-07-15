@@ -94,14 +94,14 @@ color:#666;
 }
 
 .container{
-width:90%;
-margin:35px auto;
+    width:95%;
+    max-width:1200px;
+    margin:35px auto;
 }
 
 .news-grid{
 display:grid;
-grid-template-columns:repeat(auto-fill,minmax(300px,320px));
-justify-content:center;
+grid-template-columns:repeat(2,1fr);
 gap:25px;
 }
 
@@ -151,6 +151,12 @@ padding:30px;
 .container{
 width:95%;
 }
+}
+
+@media (min-width:992px){
+    .news-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
 }
 
 .header-right{
