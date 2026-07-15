@@ -81,7 +81,7 @@ font-weight:bold;
 
 .container{
 width:95%;
-max-width:1300px;
+max-width:1600px;
 margin:35px auto;
 flex:1;
 }
@@ -89,6 +89,7 @@ flex:1;
 .news-grid{
 display:flex;
 justify-content:center;
+align-items:flex-start;
 }
 
 .card{
@@ -100,9 +101,9 @@ color:#222;
 box-shadow:0 3px 12px rgba(0,0,0,.08);
 transition:.25s;
 
-max-width:380px;
 width:100%;
-margin:auto;
+max-width:1000px;
+margin:0 auto;
 }
 
 @media (min-width:992px){
