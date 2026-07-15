@@ -106,16 +106,6 @@ max-width:1000px;
 margin:0 auto;
 }
 
-@media (min-width:992px){
-.card{
-max-width:600px;
-}
-
-.card img{
-height:500px;
-}
-}
-
 .card:hover{
 transform:translateY(-6px);
 }
@@ -312,5 +302,29 @@ display:none;
 .category-menu a{
 flex:0 0 auto;
 white-space:nowrap;
+}
+}
+
+/* Desktop */
+@media (min-width:992px){
+.news-grid{
+display:flex;
+justify-content:center;
+}
+.card{
+max-width:750px;
+}
+.card img{
+height:360px;
+}
+}
+
+/* Mobile */
+@media (max-width:991px){
+.card{
+max-width:100%;
+}
+.card img{
+height:210px;
 }
 }
