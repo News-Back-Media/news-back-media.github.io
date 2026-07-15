@@ -94,9 +94,9 @@ color:#666;
 }
 
 .container{
-    width:95%;
-    max-width:1200px;
-    margin:35px auto;
+width:95%;
+max-width:1200px;
+margin:35px auto;
 }
 
 .news-grid{
@@ -154,9 +154,9 @@ width:95%;
 }
 
 @media (min-width:992px){
-    .news-grid{
-        grid-template-columns:repeat(3,1fr);
-    }
+.news-grid{
+grid-template-columns:repeat(3,1fr);
+}
 }
 
 .header-right{
