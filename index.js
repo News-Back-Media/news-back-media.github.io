@@ -21,14 +21,19 @@ document
 const pageUrl = encodeURIComponent(window.location.href);
 const pageTitle = encodeURIComponent(document.title);
 
-document.getElementById("share-whatsapp").href =
-`https://wa.me/?text=${pageTitle}%20${pageUrl}`;
+const wa = document.getElementById("share-whatsapp");
+const tg = document.getElementById("share-telegram");
+const fb = document.getElementById("share-facebook");
+const x = document.getElementById("share-x");
 
-document.getElementById("share-telegram").href =
-`https://t.me/share/url?url=${pageUrl}&text=${pageTitle}`;
+if (wa)
+    wa.href = `https://wa.me/?text=${pageTitle}%20${pageUrl}`;
 
-document.getElementById("share-facebook").href =
-`https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`;
+if (tg)
+    tg.href = `https://t.me/share/url?url=${pageUrl}&text=${pageTitle}`;
 
-document.getElementById("share-x").href =
-`https://twitter.com/intent/tweet?text=${pageTitle}&url=${pageUrl}`;
+if (fb)
+    fb.href = `https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`;
+
+if (x)
+    x.href = `https://twitter.com/intent/tweet?text=${pageTitle}&url=${pageUrl}`;
