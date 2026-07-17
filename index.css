@@ -826,3 +826,18 @@ font-size:15px;
 color:#666;
 }
 
+.copy-link{
+margin-top:15px;
+padding:12px 20px;
+border:none;
+background:#222;
+color:#fff;
+cursor:pointer;
+border-radius:6px;
+font-size:15px;
+transition:.25s;
+}
+
+.copy-link:hover{
+background:#444;
+}
