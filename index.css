@@ -857,3 +857,12 @@ cursor:pointer;
 display:none;
 box-shadow:0 3px 10px rgba(0,0,0,.2);
 }
+
+.author-box{
+margin:15px 0;
+padding:12px 16px;
+background:#f8f8f8;
+border-left:4px solid #000;
+font-size:15px;
+line-height:1.7;
+}
