@@ -19,17 +19,13 @@ if (x)
     x.href = `https://twitter.com/intent/tweet?text=${pageTitle}&url=${pageUrl}`;
 
 const article = document.querySelector(".article");
-
 if(article){
-
+    
 const words = article.innerText.trim().split(/\s+/).length;
-
 const minutes = Math.max(1,Math.ceil(words/200));
-
 const reading = document.getElementById("reading-time");
 
 if(reading){
 reading.textContent=`⏱️ Dibaca sekitar ${minutes} menit`;
 }
-
 }
