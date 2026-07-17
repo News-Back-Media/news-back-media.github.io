@@ -819,3 +819,9 @@ margin:25px 0;
 line-height:1.8;
 border-radius:6px;
 }
+
+.article-meta{
+margin:10px 0 25px;
+font-size:15px;
+color:#666;
+}
