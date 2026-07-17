@@ -29,3 +29,18 @@ if(reading){
 reading.textContent=`⏱️ Dibaca sekitar ${minutes} menit`;
 }
 }
+
+///
+const copy=document.getElementById("copyLink");
+
+if(copy){
+copy.onclick=async()=>{
+await navigator.clipboard.writeText(window.location.href);
+copy.textContent="✓ Link berhasil disalin";
+
+setTimeout(()=>{
+
+copy.textContent="Salin Link Berita";
+},2000);
+};
+}
