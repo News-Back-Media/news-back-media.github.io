@@ -866,3 +866,13 @@ border-left:4px solid #000;
 font-size:15px;
 line-height:1.7;
 }
+
+.article-disclaimer{
+margin:45px 0 15px;
+padding:20px;
+background:#f8f8f8;
+border-radius:8px;
+font-size:14px;
+color:#666;
+line-height:1.8;
+}
