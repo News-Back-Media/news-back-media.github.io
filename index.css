@@ -841,3 +841,19 @@ transition:.25s;
 .copy-link:hover{
 background:#444;
 }
+
+#topBtn{
+position:fixed;
+right:25px;
+bottom:25px;
+width:45px;
+height:45px;
+border:none;
+border-radius:50%;
+background:#222;
+color:#fff;
+font-size:22px;
+cursor:pointer;
+display:none;
+box-shadow:0 3px 10px rgba(0,0,0,.2);
+}
