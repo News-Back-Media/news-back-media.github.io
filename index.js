@@ -58,3 +58,18 @@ pagination.appendChild(btn);
 document.getElementById("newsCount").textContent=
 cards.length+" Berita";
 tampilkanHalaman(1);
+
+//
+
+document.getElementById("sortNews").addEventListener("change",function(){
+cards.sort((a,b)=>{
+const d1=new Date(a.dataset.date);
+const d2=new Date(b.dataset.date);
+return this.value==="newest"
+? d2-d1
+: d1-d2;
+});
+const container=document.querySelector(".news-feed");
+cards.forEach(card=>container.appendChild(card));
+tampilkanHalaman(1);
+});
