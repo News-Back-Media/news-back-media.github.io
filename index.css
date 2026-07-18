@@ -581,9 +581,9 @@ font-size:24px;
 
 .hero-card{
 display:flex;
-align-items:flex-start;
 gap:15px;
 padding:18px;
+border-radius:10px;
 }
 
 .hero-image{
@@ -595,25 +595,26 @@ margin:0;
 .hero-image img{
 width:120px;
 height:90px;
-border-radius:8px;
 object-fit:cover;
+border-radius:8px;
 }
 
 .hero-content{
 padding:0;
-flex:1;
+display:block;
 }
 
 .hero-badge{
-padding:3px 10px;
-font-size:11px;
+display:inline-block;
 margin-bottom:8px;
+font-size:11px;
+padding:4px 10px;
 }
 
 .hero-content h3{
 font-size:18px;
-line-height:1.4;
 margin-bottom:8px;
+line-height:1.4;
 }
 
 .hero-content p{
