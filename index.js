@@ -13,3 +13,7 @@ card.style.display = "none";
 }
 input.addEventListener("input", cariBerita);
 document.getElementById("searchBtn").addEventListener("click", cariBerita);
+
+window.addEventListener("load", () => {
+document.getElementById("loader").classList.add("hide");
+});
