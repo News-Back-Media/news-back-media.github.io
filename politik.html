@@ -59,7 +59,7 @@ placeholder="Cari berita...">
 Berita Politik
 </h2>
 
-<a href="artikel-1.html" class="feed-card">
+<a href="artikel-1.html" class="feed-card" id="heroNews">>
 <img src="thumbnail1.jpg" alt="">
 <div class="feed-content">
 <h3>Prabowo Gelar Pertemuan dengan Dewan Ekonomi Nasional Bahas GovTech</h3>
@@ -68,7 +68,7 @@ Berita Politik
 </div>
 </a>
 
-<a href="artikel-2.html" class="feed-card">
+<a href="artikel-2.html" class="feed-card" id="heroNews">>
 <img src="thumbnail2.jpg" alt="">
 <div class="feed-content">
 <h3>Pemerintah Siapkan Kebijakan Baru untuk UMKM</h3>
@@ -77,7 +77,7 @@ Berita Politik
 </div>
 </a>
 
-<a href="artikel-3.html" class="feed-card">
+<a href="artikel-3.html" class="feed-card" id="heroNews">>
 <img src="thumbnail3.jpg" alt="">
 <div class="feed-content">
 <h3>DPR Bahas RUU Digital Nasional</h3>
@@ -86,7 +86,7 @@ Berita Politik
 </div>
 </a>
 
-<a href="artikel-4.html" class="feed-card">
+<a href="artikel-4.html" class="feed-card" id="heroNews">>
 <img src="thumbnail4.jpg" alt="">
 <div class="feed-content">
 <h3>Menteri Keuangan Paparkan Kondisi APBN</h3>
@@ -132,28 +132,5 @@ Version 1.0.0
 </p>
 </div>
 </footer>
-
-<script>
-const input = document.getElementById("searchInput");
-const hero = document.getElementById("heroNews");
-function cariBerita(){
-const keyword = input.value.toLowerCase();
-const isi = hero.innerText.toLowerCase();
-if(isi.includes(keyword)){
-hero.style.border="3px solid red";
-hero.scrollIntoView({
-behavior:"smooth",
-block:"center"
-});
-}else{
-hero.style.border="none";
-}
-}
-input.addEventListener("keyup",cariBerita);
-document
-.getElementById("searchBtn")
-.addEventListener("click",cariBerita);
-</script>
-   
 </body>
 </html>
