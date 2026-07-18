@@ -7,8 +7,9 @@
 <link rel="canonical" href="https://news-back-media.github.io/">
 <meta name="color-scheme" content="light dark">
 <meta name="referrer" content="no-referrer">
-<title>Ekonomi</title>
 <link rel="stylesheet" href="https://news-back-media.github.io/index.css">
+<script src="https://news-back-media.github.io/index.js" defer></script>
+<title>Ekonomi</title>
 </head>
 
 <body>
@@ -38,7 +39,6 @@ About
 <a href="https://news-back-media.github.io/teknologi.html">Teknologi</a>
 <a href="https://news-back-media.github.io/keamanan-siber.html">Keamanan Siber</a>
 <a href="https://news-back-media.github.io/olahraga.html">Olahraga</a>
-<a href="https://news-back-media.github.io/umum.html">General</a>
 </section>
    
 <main class="container">
@@ -53,49 +53,33 @@ placeholder="Cari berita...">
 </button>
 </div>
 </section>
-   
+
 <section class="news-feed">
-<h2 class="feed-title">
-Berita Ekonomi
+<h2 class="hero-title">
+<span></span>
+Ekonomi 
 </h2>
 
-<a href="artikel-1.html" class="feed-card">
+<a href="artikel-1.html" class="feed-card" id="heroNews">
 <img src="thumbnail1.jpg" alt="">
 <div class="feed-content">
-<h3>Prabowo Gelar Pertemuan dengan Dewan Ekonomi Nasional Bahas GovTech</h3>
-<p>Presiden Prabowo menerima Ketua DEN untuk membahas penguatan ekonomi nasional...</p>
-<span>15 Juli 2026</span>
+<h3>judul1 judul2 judul3 judul4 judul5 judul6 judul7 judul8 judul9 judul10</h3>
+<p>deskripsi1 deskripsi 2 deskripsi 3 deskripsi4 deskripsi5 deskrips6 deskrips7 deskrips8 deskrips9 deskrips10...</p>
+<span>14 Juli 2026</span>
 </div>
 </a>
 
-<a href="artikel-2.html" class="feed-card">
+<a href="artikel-2.html" class="feed-card" id="heroNews">
 <img src="thumbnail2.jpg" alt="">
 <div class="feed-content">
-<h3>Pemerintah Siapkan Kebijakan Baru untuk UMKM</h3>
-<p>Kebijakan baru disiapkan untuk memperkuat daya saing pelaku usaha kecil...</p>
+<h3>judul1 judul2 judul3 judul4 judul5 judul6 judul7 judul8 judul9 judul10</h3>
+<p>deskripsi1 deskripsi 2 deskripsi 3 deskripsi4 deskripsi5 deskrips6 newsbackmedia deskrips8 deskrips9 deskrips10...</p>
 <span>15 Juli 2026</span>
-</div>
-</a>
-
-<a href="artikel-3.html" class="feed-card">
-<img src="thumbnail3.jpg" alt="">
-<div class="feed-content">
-<h3>DPR Bahas RUU Digital Nasional</h3>
-<p>Komisi terkait mulai membahas sejumlah pasal mengenai transformasi digital...</p>
-<span>14 Juli 2026</span>
-</div>
-</a>
-
-<a href="artikel-4.html" class="feed-card">
-<img src="thumbnail4.jpg" alt="">
-<div class="feed-content">
-<h3>Menteri Keuangan Paparkan Kondisi APBN</h3>
-<p>Pemerintah optimistis target pertumbuhan ekonomi tetap tercapai...</p>
-<span>14 Juli 2026</span>
 </div>
 </a>
 </section>
-   
+</main>
+
 <footer>
 <div class="footer-container">
 <div class="footer-column">
@@ -132,28 +116,5 @@ Version 1.0.0
 </p>
 </div>
 </footer>
-
-<script>
-const input = document.getElementById("searchInput");
-const hero = document.getElementById("heroNews");
-function cariBerita(){
-const keyword = input.value.toLowerCase();
-const isi = hero.innerText.toLowerCase();
-if(isi.includes(keyword)){
-hero.style.border="3px solid red";
-hero.scrollIntoView({
-behavior:"smooth",
-block:"center"
-});
-}else{
-hero.style.border="none";
-}
-}
-input.addEventListener("keyup",cariBerita);
-document
-.getElementById("searchBtn")
-.addEventListener("click",cariBerita);
-</script>
-   
 </body>
 </html>
