@@ -976,29 +976,14 @@ background:#fff;
 display:flex;
 justify-content:center;
 align-items:center;
-z-index:99999;
-transition:opacity .4s ease, visibility .4s ease;
+z-index:999999;
 }
 
 #loader img{
-width:180px;
-max-width:70%;
-animation:pulse 1.2s infinite;
-transition:transform .4s, opacity .4s;
+width:220px;
+max-width:80%;
 }
 
 #loader.hide{
-opacity:0;
-visibility:hidden;
-}
-
-#loader.hide img{
-transform:scale(1.1);
-opacity:0;
-}
-
-@keyframes pulse{
-0%{transform:scale(.95);}
-50%{transform:scale(1);}
-100%{transform:scale(.95);}
+display:none;
 }
