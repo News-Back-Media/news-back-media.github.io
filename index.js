@@ -1,17 +1,18 @@
 const input = document.getElementById("searchInput");
-const hero = document.getElementById("heroNews");
 function cariBerita(){
 const keyword = input.value.toLowerCase();
-const isi = hero.innerText.toLowerCase();
+const cards = document.querySelectorAll(".hero-card");
+cards.forEach(card=>{
+card.style.border="none";
+const isi = card.innerText.toLowerCase();
 if(isi.includes(keyword)){
-hero.style.border="3px solid red";
-hero.scrollIntoView({
+card.style.border="3px solid red";
+card.scrollIntoView({
 behavior:"smooth",
 block:"center"
 });
-}else{
-hero.style.border="none";
 }
+});
 }
 input.addEventListener("keyup",cariBerita);
 document
