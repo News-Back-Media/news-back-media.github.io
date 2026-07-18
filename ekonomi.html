@@ -9,7 +9,6 @@
 <meta name="referrer" content="no-referrer">
 <title>Ekonomi</title>
 <link rel="stylesheet" href="https://news-back-media.github.io/index.css">
-<script src="https://news-back-media.github.io/index.js" defer></script>
 </head>
 
 <body>
@@ -55,16 +54,48 @@ placeholder="Cari berita...">
 </div>
 </section>
    
-<section class="hero-news">
-<h2 class="hero-title">
-<span></span>
-Ekonomi
+<section class="news-feed">
+<h2 class="feed-title">
+Berita Ekonomi
 </h2>
+
+<a href="artikel-1.html" class="feed-card">
+<img src="thumbnail1.jpg" alt="">
+<div class="feed-content">
+<h3>Prabowo Gelar Pertemuan dengan Dewan Ekonomi Nasional Bahas GovTech</h3>
+<p>Presiden Prabowo menerima Ketua DEN untuk membahas penguatan ekonomi nasional...</p>
+<span>15 Juli 2026</span>
+</div>
+</a>
+
+<a href="artikel-2.html" class="feed-card">
+<img src="thumbnail2.jpg" alt="">
+<div class="feed-content">
+<h3>Pemerintah Siapkan Kebijakan Baru untuk UMKM</h3>
+<p>Kebijakan baru disiapkan untuk memperkuat daya saing pelaku usaha kecil...</p>
+<span>15 Juli 2026</span>
+</div>
+</a>
+
+<a href="artikel-3.html" class="feed-card">
+<img src="thumbnail3.jpg" alt="">
+<div class="feed-content">
+<h3>DPR Bahas RUU Digital Nasional</h3>
+<p>Komisi terkait mulai membahas sejumlah pasal mengenai transformasi digital...</p>
+<span>14 Juli 2026</span>
+</div>
+</a>
+
+<a href="artikel-4.html" class="feed-card">
+<img src="thumbnail4.jpg" alt="">
+<div class="feed-content">
+<h3>Menteri Keuangan Paparkan Kondisi APBN</h3>
+<p>Pemerintah optimistis target pertumbuhan ekonomi tetap tercapai...</p>
+<span>14 Juli 2026</span>
+</div>
+</a>
 </section>
-</main>
-
-isi konten disini
-
+   
 <footer>
 <div class="footer-container">
 <div class="footer-column">
@@ -77,11 +108,11 @@ akurat, dan mudah dipahami.
 <div class="footer-column">
 <h3>Navigasi</h3>
 <a href="https://news-back-media.github.io/" target="_blank">Home</a>
-<a href="https://news-back-media.github.io/" target="_blank">About</a>
-<a href="https://news-back-media.github.io/" target="_blank">Politik</a>
-<a href="https://news-back-media.github.io/" target="_blank">Ekonomi</a>
-<a href="https://news-back-media.github.io/" target="_blank">Teknologi</a>
-<a href="https://news-back-media.github.io/" target="_blank">Keamanan Siber</a>
+<a href="https://news-back-media.github.io/about.html" target="_blank">About</a>
+<a href="https://news-back-media.github.io/politik.html" target="_blank">Politik</a>
+<a href="https://news-back-media.github.io/ekonomi.html" target="_blank">Ekonomi</a>
+<a href="https://news-back-media.github.io/teknologi.html" target="_blank">Teknologi</a>
+<a href="https://news-back-media.github.io/keamanan-siber.html" target="_blank">Keamanan Siber</a>
 </div>
 <div class="footer-column">
 <h3>Ikuti Kami</h3>
@@ -101,5 +132,28 @@ Version 1.0.0
 </p>
 </div>
 </footer>
+
+<script>
+const input = document.getElementById("searchInput");
+const hero = document.getElementById("heroNews");
+function cariBerita(){
+const keyword = input.value.toLowerCase();
+const isi = hero.innerText.toLowerCase();
+if(isi.includes(keyword)){
+hero.style.border="3px solid red";
+hero.scrollIntoView({
+behavior:"smooth",
+block:"center"
+});
+}else{
+hero.style.border="none";
+}
+}
+input.addEventListener("keyup",cariBerita);
+document
+.getElementById("searchBtn")
+.addEventListener("click",cariBerita);
+</script>
+   
 </body>
 </html>
