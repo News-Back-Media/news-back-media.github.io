@@ -15,5 +15,7 @@ input.addEventListener("input", cariBerita);
 document.getElementById("searchBtn").addEventListener("click", cariBerita);
 
 window.addEventListener("load", () => {
+setTimeout(() => {
 document.getElementById("loader").classList.add("hide");
+}, 1500);
 });
