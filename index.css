@@ -960,9 +960,8 @@ display:none;
 }
 }
 
-.category-menu a:hover,
 .category-menu a.active{
-    background:#000;
-    color:#fff;
-    border-color:#000;
+background:#000;
+color:#fff;
+border-color:#000;
 }
