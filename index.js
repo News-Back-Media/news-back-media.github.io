@@ -1,29 +1,53 @@
 const input = document.getElementById("searchInput");
 const cards = document.querySelectorAll(".hero-card, .feed-card");
+
 function cariBerita() {
 const keyword = input.value.trim().toLowerCase();
+
 cards.forEach(card => {
 const isi = card.textContent.toLowerCase();
+
 if (keyword === "" || isi.includes(keyword)) {
 card.style.display = "";
 } else {
 card.style.display = "none";
 }
+
 });
 }
+
+if(input){
 input.addEventListener("input", cariBerita);
-document.getElementById("searchBtn").addEventListener("click", cariBerita);
+}
+
+const searchBtn = document.getElementById("searchBtn");
+if(searchBtn){
+searchBtn.addEventListener("click", cariBerita);
+}
 
 //
 
 window.addEventListener("load", () => {
+
 setTimeout(() => {
-document.getElementById("loader").classList.add("hide");
-}, 1500);
+
+const loader = document.getElementById("loader");
+
+if(loader){
+loader.classList.add("hide");
+}
+
+},1500);
+
 });
 
 //
-const cards = document.querySelectorAll(".feed-card");
+
+// Pagination
+const feedCards = document.querySelectorAll(".feed-card");
+const pagination = document.getElementById("pagination");
+
+if(feedCards.length > 0 && pagination){
 
 const perPage = 5;
 let currentPage = 1;
@@ -32,7 +56,7 @@ function showPage(page){
 
 currentPage = page;
 
-cards.forEach((card,index)=>{
+feedCards.forEach((card,index)=>{
 
 const start=(page-1)*perPage;
 const end=start+perPage;
@@ -50,9 +74,7 @@ renderPagination();
 
 function renderPagination(){
 
-const totalPages=Math.ceil(cards.length/perPage);
-
-const pagination=document.getElementById("pagination");
+const totalPages=Math.ceil(feedCards.length/perPage);
 
 pagination.innerHTML="";
 
@@ -75,3 +97,5 @@ pagination.appendChild(btn);
 }
 
 showPage(1);
+
+}
