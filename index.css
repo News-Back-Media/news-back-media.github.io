@@ -1019,6 +1019,7 @@ font-size:14px;
 .pagination{
 display:flex;
 justify-content:center;
+align-items:center;
 gap:8px;
 margin:35px 0;
 flex-wrap:wrap;
@@ -1029,9 +1030,12 @@ width:40px;
 height:40px;
 border:none;
 border-radius:6px;
-background:#eee;
+background:#e9e9e9;
+color:#222;
 cursor:pointer;
 font-weight:bold;
+font-size:15px;
+transition:.2s;
 }
 
 .pagination button.active{
@@ -1039,9 +1043,15 @@ background:#111;
 color:#fff;
 }
 
-.pagination button:hover{
-background:#444;
-color:#fff;
+.pagination button:hover:not(.active){
+background:#d5d5d5;
+color:#111;
+}
+
+.pagination button:disabled{
+background:#f3f3f3;
+color:#999;
+cursor:not-allowed;
 }
 
 .article-image{
