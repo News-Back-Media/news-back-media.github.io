@@ -1043,3 +1043,12 @@ color:#fff;
 background:#444;
 color:#fff;
 }
+
+.article-image{
+width:100%;
+height:auto;
+display:block;
+border-radius:10px;
+margin:20px 0;
+object-fit:cover;
+}
