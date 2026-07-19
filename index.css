@@ -1047,7 +1047,9 @@ color:#fff;
 .article-image{
 display:block;
 width:100%;
+max-width:100%;
 height:auto;
 margin:20px 0;
 border-radius:10px;
+object-fit:cover;
 }
